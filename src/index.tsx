@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import './index.module.scss';
-import VehiclesPage from './pages/Vehicles';
+
 import reportWebVitals from './reportWebVitals';
+
+import Home from './pages/Home';
+import NotesProvider from './contexts/NotesContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <VehiclesPage />
+    <NotesProvider>
+      <Home />
+    </NotesProvider>
   </React.StrictMode>
 );
 

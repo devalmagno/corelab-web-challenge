@@ -1,0 +1,41 @@
+ @import '../../index.module.scss';
+ @import '../../styles/break-points.scss';
+
+ .searchContainer {
+     position: relative;
+
+     max-width: 314px;
+     width: 100%;
+     height: 28px;
+
+     transition: all .3s ease;
+
+     @include laptop {
+         max-width: 530px;
+     }
+
+     input {
+         width: 100%;
+         height: 100%;
+         padding: 0 9px;
+
+         border: 1px solid $border;
+         border-radius: 3px;
+         box-shadow: $box-shadow;
+
+         font-size: 11px;
+
+         color: $search-title;
+
+         &::placeholder {
+             color: $search-title;
+         }
+     }
+
+     img {
+         position: absolute;
+         right: 9px;
+         top: 7px;
+     }
+
+ }

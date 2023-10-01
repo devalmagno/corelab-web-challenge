@@ -1,0 +1,27 @@
+ @import '../../index.module.scss';
+ @import '../../styles/break-points.scss';
+
+ .header {
+     position: relative;
+
+     display: flex;
+     align-items: center;
+     column-gap: 20px;
+     padding: 18px;
+
+     background-color: $white-background;
+     box-shadow: 0px 1px 7px 0 #95959525;
+
+     button {
+         display: none;
+         position: absolute;
+         right: 36px;
+
+         background: transparent;
+         border: none;
+
+         @include laptop {
+             display: inline-block;
+         }
+     }
+ }
